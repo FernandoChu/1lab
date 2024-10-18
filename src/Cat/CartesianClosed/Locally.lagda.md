@@ -115,7 +115,7 @@ $$
   \Gamma \vdash f : \Pi_{x : A}B(x) \quad
   \Gamma \vdash e : A
 }{
-  \Gamma \vdash f(x) : B(e)
+  \Gamma \vdash f(e) : B(e)
 }
 $$
 
@@ -125,7 +125,7 @@ which, by abstracting away the substitution of the argument[^app],
 expresses that there is an isomorphism between derivations $\Gamma
 \vdash f : \Pi_{(x : A)} B(x)$ and $\Gamma, x : A \vdash f(x) : B(x)$.
 If we squint, this says precisely that $\Pi$ is a [[right adjoint]] to
-the action of base change along $\pi_1 : \Gamma.A \to A$!
+the action of base change along $\pi_1 : \Gamma.A \to \Gamma$!
 
 [^app]: To expand on the idea of this more _categorical_ application, if
 we have $\Gamma \vdash f : \Pi_{x : A}B(x)$, we first "open" it to
